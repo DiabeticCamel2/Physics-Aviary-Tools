@@ -2,73 +2,22 @@
 <!--  Physics Aviary Tools -->
 <!-- ===================== -->
 
-<style>
-  .pa-container {
-    max-width: 900px;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
+# Physics Aviary Tools
 
-  .pa-title {
-    text-align: center;
-    font-size: 2.6em;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 0.2em;
-  }
+**Client side bookmarklets and debugging helpers for Physics Aviary simulations**
 
-  .pa-subtitle {
-    text-align: center;
-    color: #6b7280;
-    margin-bottom: 2em;
-  }
+---
 
-  .pa-card {
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-  }
+## What this is
 
-  .pa-card h2 {
-    margin-top: 0;
-    color: #111827;
-  }
+This repository contains **bookmarklets and helper scripts** designed to work with  
+Physics Aviary simulations that calculate answers entirely on the client side.
 
-  .pa-code {
-    background: #0f172a;
-    color: #e5e7eb;
-    padding: 1em;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-size: 0.9em;
-  }
-
-  .pa-warning {
-    background: #fff7ed;
-    border: 1px solid #fed7aa;
-    border-radius: 10px;
-    padding: 1em;
-    color: #9a3412;
-  }
-
-  .pa-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #6b7280;
-    margin-top: 3em;
-  }
-</style>
-
-<div class="pa-container">
-
-<div class="pa-title">Physics Aviary Tools</div>
-<div class="pa-subtitle">
-Client side bookmarklets and debugging helpers for Physics Aviary simulations
-</div>
-
+These tools:
+- Detect internally computed answers
+- Automatically populate input fields
+- Apply safe rounding when needed
+- Resubmit and redraw the results screen
 ---
 
 <div class="pa-card">
