@@ -40,6 +40,11 @@ No servers are modified.
 
 ---
 
+## Note
+
+Please note that the **Physics Aviary Tools** (bookmarklet) may not work correctly on all simulations. Some simulations may have restrictions or compatibility issues that prevent the tools from functioning as expected.
+
+---
 <div class="pa-card">
 <h2>Universal bookmarklet</h2>
 
