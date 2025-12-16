@@ -4,23 +4,6 @@
 
 # Physics Aviary Tools
 
-**Client side bookmarklets and debugging helpers for Physics Aviary simulations**
-
----
-
-## What this is
-
-This repository contains **bookmarklets and helper scripts** designed to work with  
-Physics Aviary simulations that calculate answers entirely on the client side.
-
-These tools:
-- Detect internally computed answers
-- Automatically populate input fields
-- Apply safe rounding when needed
-- Resubmit and redraw the results screen
----
-
-<div class="pa-card">
 <h2>What this is</h2>
 
 This repository contains **bookmarklets and helper scripts** designed to work with  
@@ -32,7 +15,7 @@ These tools:
 - Apply safe rounding when needed
 - Resubmit and redraw the results screen
 
-They are intended for **learning, debugging, and testing**, not for server bypassing.
+They are intended for **learning, debugging, and testing**, not for cheating ;).
 
 </div>
 
