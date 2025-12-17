@@ -48,8 +48,7 @@ Please note that the **Physics Aviary Tools** (bookmarklet) may not work correct
 <div class="pa-card">
 <h2>Universal bookmarklet</h2>
 
-This bookmarklet works for simulations with **1 to many answers** and automatically
-rounds values to one decimal place.
+This bookmarklet automatically rounds values to two decimal places.
 
 <div class="pa-code">
 
