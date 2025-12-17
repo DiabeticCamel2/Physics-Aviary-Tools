@@ -54,39 +54,4 @@ rounds values to one decimal place.
 <div class="pa-code">
 
 ```javascript
-javascript:(function(){
-	try{
-		if (window.$){
-			$("#SpaceForAnswer").show();
-			$("#SystemMessage").show();
-		}
-
-		if (typeof SubmitForm === "function"){
-			SubmitForm();
-		}
-
-		function roundOneDecimal(x){
-			return Math.round(x * 10) / 10;
-		}
-
-		var answers = [];
-		for (var i = 1; i <= 10; i++){
-			if (typeof window["Answer" + i] !== "undefined"){
-				answers.push(window["Answer" + i]);
-			}
-		}
-
-		for (var j = 0; j < answers.length; j++){
-			var inputId = "#A" + (j + 1);
-			if (window.$ && $(inputId).length){
-				$(inputId).val(roundOneDecimal(answers[j]));
-			}
-		}
-
-		if (typeof SubmitForm === "function"){
-			SubmitForm();
-		}
-	}catch(e){
-		alert("Bookmarklet error: " + e.message);
-	}
-})();
+javascript:(function(){try{var percentOff=prompt("Enter percentage to subtract from answers (e.g., 1 for 1% off).\n\nNote: Errors above 2% will likely be too far off.","0");if(percentOff===null){return}percentOff=parseFloat(percentOff);if(isNaN(percentOff)){percentOff=0}var multiplier=1-(percentOff/100);if(window.$){$("#SpaceForAnswer").show();$("#SystemMessage").show()}if(typeof SubmitForm==="function"){SubmitForm()}function roundTwoDecimals(x){return Math.round(x*100)/100}var answers=[];for(var i=1;i<=10;i++){if(typeof window["Answer"+i]!=="undefined"){answers.push(window["Answer"+i])}}for(var j=0;j<answers.length;j++){var inputId="#A"+(j+1);if(window.$&&$(inputId).length){var adjustedAnswer=answers[j]*multiplier;$(inputId).val(roundTwoDecimals(adjustedAnswer))}}if(typeof SubmitForm==="function"){SubmitForm()}}catch(e){alert("Error: "+e.message)}})();
